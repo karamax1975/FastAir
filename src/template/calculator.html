@@ -1,0 +1,404 @@
+<section class="calc" id="calc">
+  <div class="container">
+    <div class="row">
+      <div class="col calc-row">
+        <h2 class="section-title dark-gray" id="titleSection">КАЛЬКУЛЯТОР</h2>
+        <div class="calc__selector">
+          <div class="check-wrapper">
+            <input type="radio" id="fast-check" name="calc" value="fast">
+            <label for="fast-check">
+              <span>БЫСТРЫЙ ЗАПРОС</span>
+            </label>
+          </div>
+          <div class="check-wrapper">
+            <input type="radio" id="calculator-check" name="calc" value="full" checked>
+            <label for="calculator-check">
+              <span>КАЛЬКУЛЯТОР</span>
+            </label>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="row calculator">
+      <div class="col-lg-4">
+        <div class="checkbox-list">
+          <p>Выберите одну или несколько услуг:</p>
+          <label for="spares" class="checkbox">
+            <input type="checkbox" id="spares">
+            <span>Покупка запчастей</span>
+          </label>
+          <label for="customs" class="checkbox">
+            <input type="checkbox" id="customs">
+            <span>Таможня</span>
+          </label>
+          <label for="delivery" class="checkbox">
+            <input type="checkbox" id="delivery">
+            <span>Доставка</span>
+          </label>
+          <label for="repairs" class="checkbox">
+            <input type="checkbox" id="repairs">
+            <span>Ремонт</span>
+          </label>
+        </div>
+      </div>
+      <div class="col-lg-8">
+        <form action="" class="form-list" id='calcForm'>
+          <div class="form-title">
+            <p>Заполните форму обратной связи:</p>
+            <p class="description"><b>*</b> Обязательные к заполнению поля</p>
+          </div>
+          <!-- -------------------------------------------------------- -->
+          <div class="form-item">
+            <div class="input-row">
+              <label for="calcForm" class="input">
+                <input type="text">
+                <span class="plaсeholder">Ф.И.О. <b>*</b></span>
+                <span class="alert">Ошибка заполнения</span>
+              </label>
+              <label for="calcForm" class="input">
+                <input type="text">
+                <span class="plaсeholder">Компания <b>*</b></span>
+                <span class="alert">Ошибка заполнения</span>
+              </label>
+            </div>
+            <div class="input-row">
+              <label for="calcForm" class="input">
+                <input type="email">
+                <span class="plaсeholder">E-mail: <b>*</b></span>
+                <span class="alert">Ошибка заполнения</span>
+              </label>
+              <label for="calcForm" class="input">
+                <input type="tel">
+                <span class="plaсeholder">Телефон: <b>*</b></span>
+                <span class="alert">Ошибка заполнения</span>
+              </label>
+            </div>
+          </div>
+          <!-- ----------------------------------------------------------- -->
+          <section class="service-item">
+            <div class="service-item__title">
+              <div class="title__icon spare"></div>
+              <h5>Покупка запчастей</h5>
+            </div>
+            <div class="service-item__accordion">
+              <div class="input-row__uneven">
+                <label for="calcForm" class="input">
+                  <input type="tel">
+                  <span class="plaсeholder">Партийный номер <b>*</b></span>
+                  <span class="alert">Ошибка заполнения</span>
+                </label>
+                <label for="calcForm" class="number">
+                  <div class="input-btn counter dec"></div>
+                  <input type="text" id="numberParty" value="1">
+                  <div class="input-btn counter inc"></div>
+                </label>
+              </div>
+              <div class="input-row__uneven">
+                <label for="calcForm" class="input">
+                  <input type="text">
+                  <span class="plaсeholder">Описание</span>
+                  <span class="alert">Ошибка заполнения</span>
+                </label>
+              </div>
+              <div class="input-row">
+                <label for="calcForm" class="input">
+                  <input type="text">
+                  <span class="plaсeholder">Тип ВС</span>
+                  <span class="alert">Ошибка заполнения</span>
+                </label>
+                <label for="calcForm" class="select">
+                  <div class="select__title">
+                    <span>Срочность <b>*</b></span>
+                  </div>
+                  <input type="text">
+                  <div class="select__list">
+                    <div class="select-list__item"><span>Item</span></div>
+                    <div class="select-list__item"><span>Item</span></div>
+                    <div class="select-list__item"><span>Item</span></div>
+                    <div class="select-list__item"><span>Item</span></div>
+                  </div>
+                </label>
+              </div>
+              <div class="input-row">
+                <label for="add-detail" class="btn-add-detail">
+                  <input type="checkbox" id="add-detail">
+                  <div class="input-btn counter inc"></div>
+                  <span>Добавить деталь</span>
+                </label>
+              </div>
+            </div>
+          </section>
+          <!-- ---------------------------------------------------- -->
+          <section class="service-item">
+            <div class="service-item__title">
+              <div class="title__icon custom"></div>
+              <h5>Таможня</h5>
+            </div>
+            <div class="service-item__accordion">
+              <div class="radio_row">
+                <label for="import" class="radio">
+                  <input type="radio" id="import" name="customs">
+                  <span>Импорт</span>
+                </label>
+                <label for="export" class="radio">
+                  <input type="radio" id="export" name="customs">
+                  <span>Экспорт</span>
+                </label>
+              </div>
+              <div class="input-row__uneven">
+                <label for="cargo-name" class="input">
+                  <input type="text" id="cargo-name">
+                  <span class="plaсeholder">Наименование груза <b>*</b></span>
+                </label>
+              </div>
+              <div class="input-row">
+                <label for="calcForm" class="input">
+                  <input type="text">
+                  <span class="plaсeholder">Страна отправитель<b>*</b></span>
+                  <span class="alert">Ошибка заполнения</span>
+                </label>
+                <label for="calcForm" class="input">
+                  <input type="text">
+                  <span class="plaсeholder">Страна получатель<b>*</b></span>
+                  <span class="alert">Ошибка заполнения</span>
+                </label>
+              </div>
+              <div class="input-row">
+                <label for="calcForm" class="input">
+                  <input type="text">
+                  <span class="plaсeholder">Кол-во артикулов<b>*</b></span>
+                  <span class="alert">Ошибка заполнения</span>
+                </label>
+                <label for="calcForm" class="select">
+                  <div class="select__title">
+                    <span>Вид транспорта <b>*</b></span>
+                  </div>
+                  <input type="text">
+                  <div class="select__list">
+                    <div class="select-list__item"><span>Item</span></div>
+                    <div class="select-list__item"><span>Item</span></div>
+                    <div class="select-list__item"><span>Item</span></div>
+                    <div class="select-list__item"><span>Item</span></div>
+                  </div>
+                </label>
+              </div>
+              <div class="input-row__uneven pb15 customs-row">
+                <label for="express" class="checkbox">
+                  <input type="checkbox" id="express">
+                  <span>Экспресс таможня</span>
+                </label>
+                <div class="cash">
+                  <p>Стоимость по счету:</p>
+                  <input type="text" class="cash-input" value="1000">
+                  <label for="calcForm" class="select">
+                    <div class="select__title">
+                      <span>Валюта <b>*</b></span>
+                    </div>
+                    <input type="text">
+                    <div class="select__list">
+                      <div class="select-list__item"><span>Рубли</span></div>
+                      <div class="select-list__item"><span>Доллары</span></div>
+                      <div class="select-list__item"><span>Евро</span></div>
+                      <div class="select-list__item"><span>Фунты-стерлинги</span></div>
+                    </div>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- ---------------------------------------------- -->
+          <section class="service-item">
+            <div class="service-item__title">
+              <div class="title__icon delivery"></div>
+              <h5>Доставка</h5>
+            </div>
+            <div class="service-item__accordion">
+              <div class="input-row">
+                <label for="calcForm" class="input">
+                  <input type="text">
+                  <span class="plaсeholder">Откуда <b>*</b></span>
+                  <span class="alert">Ошибка заполнения</span>
+                </label>
+                <label for="calcForm" class="input">
+                  <input type="text">
+                  <span class="plaсeholder">Куда <b>*</b></span>
+                  <span class="alert">Ошибка заполнения</span>
+                </label>
+              </div>
+              <div class="input-row">
+                <label for="calcForm" class="input">
+                  <input type="text">
+                  <span class="plaсeholder">Тип груза <b>*</b></span>
+                  <span class="alert">Ошибка заполнения</span>
+                </label>
+                <div class="wrapper">
+                  <label for="alert" class="checkbox">
+                    <input type="checkbox" id="alert">
+                    <span>Опасный груз</span>
+                  </label>
+                </div>
+              </div>
+              <div class="input-row">
+                <label for="calcForm" class="input">
+                  <input type="text">
+                  <span class="plaсeholder">Размеры <b>*</b></span>
+                  <span class="alert">Ошибка заполнения</span>
+                </label>
+                <label for="calcForm" class="input">
+                  <input type="text">
+                  <span class="plaсeholder">Вес <b>*</b></span>
+                  <span class="alert">Ошибка заполнения</span>
+                </label>
+              </div>
+              <div class="radio_row">
+                <label for="english-weight" class="radio">
+                  <input type="radio" id="english-weight" name="weight">
+                  <span>Размер и вес в имперической системе</span>
+                </label>
+                <label for="metric-weight" class="radio">
+                  <input type="radio" id="metric-weight" name="weight" checked>
+                  <span>Размер и вес в метрической системе</span>
+                </label>
+              </div>
+            </div>
+          </section>
+          <!-- ------------------------------------------------------ -->
+          <section class="service-item">
+            <div class="service-item__title">
+              <div class="title__icon repair"></div>
+              <h5>Ремонт</h5>
+            </div>
+            <div class="service-item__accordion">
+              <div class="input-row__uneven">
+                <label for="calcForm" class="input">
+                  <input type="text">
+                  <span class="plaсeholder">Партийный номер <b>*</b></span>
+                  <span class="alert">Ошибка заполнения</span>
+                </label>
+                <label for="calcForm" class="number">
+                  <div class="input-btn counter dec"></div>
+                  <input type="text" id="numberParty" value="1">
+                  <div class="input-btn counter inc"></div>
+                </label>
+              </div>
+              <div class="input-row__uneven">
+                <label for="calcForm" class="input">
+                  <input type="text">
+                  <span class="plaсeholder">Описание</span>
+                  <span class="alert">Ошибка заполнения</span>
+                </label>
+              </div>
+              <div class="input-row">
+                <label for="calcForm" class="input">
+                  <input type="text">
+                  <span class="plaсeholder">Тип ВС</span>
+                  <span class="alert">Ошибка заполнения</span>
+                </label>
+                <label for="calcForm" class="select">
+                  <div class="select__title">
+                    <span>Срочность <b>*</b></span>
+                  </div>
+                  <input type="text">
+                  <div class="select__list">
+                    <div class="select-list__item"><span>Item</span></div>
+                    <div class="select-list__item"><span>Item</span></div>
+                    <div class="select-list__item"><span>Item</span></div>
+                    <div class="select-list__item"><span>Item</span></div>
+                  </div>
+                </label>
+              </div>
+              <div class="input-row">
+                <label for="add-detail" class="btn-add-detail">
+                  <input type="checkbox" id="add-detail">
+                  <div class="input-btn counter inc"></div>
+                  <span>Добавить деталь</span>
+                </label>
+              </div>
+            </div>
+          </section>
+          <!-- -------------------------------------------------------------- -->
+          <section class="confirmation">
+            <div class="input-file">
+              <div class="input-file__description">
+                <p>Прикрепить документы</p>
+                <small>Вложить файлы (в формате pdf, jpg)</small>
+              </div>
+              <label for="file">
+                <input type="file" id="file">
+                <span>Выбрать файл</span>
+              </label>
+            </div>
+            <div class="input-row">
+              <div class="group-checkBox">
+                <label for="confirmation" class="checkbox">
+                  <input type="checkbox" id="confirmation">
+                  <span>Я ознакомлен и соглашаюсь <a href="#">с условиями<br>использования персональных
+                      данных</a></span>
+                </label>
+                <label for="robot" class="checkbox">
+                  <input type="checkbox" id="robot">
+                  <span>Я не робот</span>
+                </label>
+              </div>
+              <button type="submit" class="btn btn-submit btn-orange">Отправить</button>
+            </div>
+          </section>
+          <!-- ----------------------------------------------------------------------- -->
+        </form>
+      </div>
+    </div>
+    <div class="row fast-form">
+      <div class="col-lg-8">
+        <!-- ----------------form ---------------------- -->
+        <form action="" class="form-list">
+          <div class="form-title">
+            <p>Заполните форму обратной связи:</p>
+            <p class="description"><b>*</b> Обязательные к заполнению поля</p>
+          </div>
+          <div class="input-row">
+            <label for="calcForm" class="input">
+              <input type="text">
+              <span class="plaсeholder">Ф.И.О. <b>*</b></span>
+              <span class="alert">Ошибка заполнения</span>
+            </label>
+            <label for="calcForm" class="input">
+              <input type="tel">
+              <span class="plaсeholder">Телефон <b>*</b></span>
+              <span class="alert">Ошибка заполнения</span>
+            </label>
+          </div>
+          <div class="input-row">
+            <label for="calcForm" class="input">
+              <input type="text">
+              <span class="plaсeholder">Услуга</span>
+              <span class="alert">Ошибка заполнения</span>
+            </label>
+            <label for="calcForm" class="input">
+              <input type="email">
+              <span class="plaсeholder">E-mail:</span>
+              <span class="alert">Ошибка заполнения</span>
+            </label>
+          </div>
+          <section class="confirmation">
+            <div class="input-row">
+              <div class="group-checkBox">
+                <label for="confirmation-fast" class="checkbox">
+                  <input type="checkbox" id="confirmation-fast">
+                  <span>Я ознакомлен и соглашаюсь <a href="#">с условиями<br>использования персональных
+                      данных</a></span>
+                </label>
+                <label for="robot-fast" class="checkbox">
+                  <input type="checkbox" id="robot-fast">
+                  <span>Я не робот</span>
+                </label>
+              </div>
+              <button type="submit" class="btn btn-submit btn-orange">Отправить</button>
+            </div>
+          </section>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
