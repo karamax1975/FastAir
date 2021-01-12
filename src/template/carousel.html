@@ -1,8 +1,80 @@
-<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+<!-- <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" /> -->
 
 <section class="carousel">
   <div class="container">
     <div class="carousel_slide-show">
+      <!-- <div class="slide-item">
+        <div class="wrapper">
+          <div class="slide-item__img">
+            <img src="img/slide_1.jpg" alt="">
+          </div>
+          <div class="slide-item__content">
+            <div>
+              <h6>Поставка деталей трансмиссии</h6>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi magna nec, eu massa in semper adipiscing
+                enim neque.</p>
+            </div>
+            <button class="btn btn-calculate">
+              <div class="btn-icon__calc"></div>
+              <span>Расчитать заказ</span>
+            </button>
+          </div>
+        </div>
+      </div> -->
+      <div class="slide-item">
+        <div class="wrapper">
+          <div class="slide-item__img">
+            <img src="img/news_preview_big.jpg" alt="">
+          </div>
+          <div class="slide-item__content">
+            <div>
+              <h6>Поставка деталей трансмиссии</h6>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi magna nec, eu massa in semper adipiscing
+                enim neque.</p>
+            </div>
+            <button class="btn btn-calculate">
+              <div class="btn-icon__calc"></div>
+              <span>Расчитать заказ</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="slide-item">
+        <div class="wrapper">
+          <div class="slide-item__img">
+            <img src="img/slide_1.jpg" alt="">
+          </div>
+          <div class="slide-item__content">
+            <div>
+              <h6>РАСТАМОЖКА ЗАПЧАСТЕЙ</h6>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi magna nec, eu massa in semper adipiscing
+                enim neque.</p>
+            </div>
+            <button class="btn btn-calculate">
+              <div class="btn-icon__calc"></div>
+              <span>Расчитать заказ</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="slide-item">
+        <div class="wrapper">
+          <div class="slide-item__img">
+            <img src="img/article_img_1.jpg" alt="">
+          </div>
+          <div class="slide-item__content">
+            <div>
+              <h6>Поставка деталей трансмиссии</h6>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi magna nec, eu massa in semper adipiscing
+                enim neque.</p>
+            </div>
+            <button class="btn btn-calculate">
+              <div class="btn-icon__calc"></div>
+              <span>Расчитать заказ</span>
+            </button>
+          </div>
+        </div>
+      </div>
       <div class="slide-item">
         <div class="wrapper">
           <div class="slide-item__img">
@@ -21,10 +93,24 @@
           </div>
         </div>
       </div>
-      <div class="slide-item">2</div>
-      <div class="slide-item">3</div>
-      <div class="slide-item">4</div>
-      <div class="slide-item">5</div>
+      <div class="slide-item">
+        <div class="wrapper">
+          <div class="slide-item__img">
+            <img src="img/slide_1.jpg" alt="">
+          </div>
+          <div class="slide-item__content">
+            <div>
+              <h6>Поставка деталей трансмиссии</h6>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi magna nec, eu massa in semper adipiscing
+                enim neque.</p>
+            </div>
+            <button class="btn btn-calculate">
+              <div class="btn-icon__calc"></div>
+              <span>Расчитать заказ</span>
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 
@@ -34,9 +120,19 @@
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script>
   $('.carousel_slide-show').slick({
-    centerMode: true,
     slidesToShow: 3,
-    // focusOnSelect:true,
+    slidesToScroll: 1,
+    dots: false,
+    // infinite: true,
+    variableWidth: true,
+    centerMode: true,
+    cssEase: 'linear',
+    speed: 0,
+    allowTouchMove: false,
+    // ------------------------
+    // centerMode: true,
+    // slidesToShow: 3,
+
     arrows: true,
     prevArrow: '<button class="carousel-btn btn-prev"><span></span></button>',
     nextArrow: '<button class="carousel-btn btn-next"><span></span></button>'
