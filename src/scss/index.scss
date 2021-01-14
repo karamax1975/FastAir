@@ -1100,6 +1100,7 @@ header {
   left: 0;
   color: var(--gray-dark);
   top: 30px;
+  pointer-events: none;
 }
 .form-textBox .form-textBox__input {
   width: 100%;
@@ -2802,6 +2803,9 @@ p {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  .number{
+    margin-bottom: 15px;
+  }
   @media screen and (max-width: 900px) {
 
   }
