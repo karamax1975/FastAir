@@ -1781,6 +1781,7 @@ p {
   justify-content: flex-end;
   @media screen and (max-width: 900px) {
     justify-content: flex-start;
+    width: 100%;
   }
 }
 .wiget-select-service .wiget_left .service-item .item__description {
@@ -2110,9 +2111,11 @@ p {
   width: 50%;
   overflow: hidden;
   height: 382px;
+
 }
 .big-card .big-card_img img {
   object-fit: cover;
+
 }
 .big-card .news-card__content {
   height: auto !important;
@@ -2741,7 +2744,12 @@ p {
   padding: 8px 15px;
   border: solid 1px var(--gray-light);
   @media screen and (max-width: 900px) {
-    padding: 15px;
+    padding: 0 15px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
 }
 .calc .calc__selector .check-wrapper input:checked + label {
@@ -2788,11 +2796,15 @@ p {
 }
 .calc .form-list .input {
   margin-bottom: 15px;
+
 }
 .calc .form-list .input-row__uneven {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  @media screen and (max-width: 900px) {
+
+  }
 
 
 }
@@ -2840,12 +2852,16 @@ p {
   @media screen and (max-width: 900px) {
     padding: 0;
     margin: 0;
-    width: calc(100% / 2 - 15px);
+    width: 30%;
+    // width: calc(100% / 2 - 30px);
     padding-left: 15px;
   }
 }
 .calc .form-list .cash .select {
   width: 201px;
+  @media screen and (max-width: 900px) {
+    width: 70%;
+  }
 }
 .calc .form-list .input-row {
   display: flex;
@@ -2987,6 +3003,9 @@ p {
   font-weight: 300;
   font-size: 14px;
   pointer-events: none;
+  @media screen and (max-width: 900px) {
+    white-space:pre-wrap;
+  }
 }
 .input .alert {
   position: relative;
@@ -3238,6 +3257,11 @@ p {
   display: block;
   width: 100%;
   margin-bottom: 15px;
+  span{
+    display: block;
+    width: 100%;
+    padding-right: 15px;
+  }
 }
 .confirmation .btn-submit {
   margin-top: 15px;
