@@ -3352,27 +3352,50 @@ p {
   padding: 60px;
   padding-bottom: 120px;
   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
+  @media screen and (max-width: 900px) {
+    width: 100%;
+    flex-direction: column;
+    padding: 30px;
+  }
 }
 .businessCard .businessCard__person {
   width: 679px;
   display: flex;
   justify-content: space-between;
+  @media screen and (max-width: 900px) {
+    display: block;
+    width: auto;
+    width: 100%;
+  }
+
 }
 .businessCard .businessCard__person .person_img {
   width: 190;
   height: 230px;
-  background: silver;
   display: flex;
   align-items: center;
   justify-content: center;
+  @media screen and (max-width: 900px) {
+    width: auto;
+    height: auto;
+  }
 }
 .businessCard .businessCard__person .person_img img {
   object-fit: cover;
+  @media screen and (max-width: 900px) {
+    width: 100%;
+  }
 }
 .businessCard .businessCard__person .person__text {
   flex: 1;
   padding-left: 60px;
   border-right: 1px solid #D1D2D4;
+  @media screen and (max-width: 900px) {
+    text-align: center;
+    padding-left: 0;
+    border-right: none;
+    margin-top: 30px;
+  }
 }
 .businessCard .businessCard__person .person__text h1 {
   font-weight: 800;
@@ -3386,6 +3409,9 @@ p {
   font-size: 18px;
   line-height: 22px;
   color: var(--black);
+  @media screen and (max-width: 900px) {
+    margin: 15px 0;
+  }
 }
 .businessCard .businessCard__person .person__text .person__text-id {
   color: var(--gray-dark);
@@ -3393,13 +3419,25 @@ p {
   font-weight: 400;
   line-height: 19px;
   color: var(--gray-dark);
+  @media screen and (max-width: 900px) {
+    margin-bottom: 15px;
+  }
+  
 }
 .businessCard .businessCard__info {
   width: 460px;
+  @media screen and (max-width: 900px) {
+    width: 100%;
+  }
 }
 .businessCard .businessCard__info .info-row {
   display: flex;
   margin-bottom: 30px;
+  @media screen and (max-width: 900px) {
+    display: block;
+    text-align: center;
+    margin-bottom: 15px;
+  }
 }
 .businessCard .businessCard__info .info-row:last-child {
   margin-bottom: 0;
@@ -3421,19 +3459,36 @@ p {
 }
 .businessCard .businessCard__info .info-row .info__data {
   flex: 2;
+  @media screen and (max-width: 900px) {
+    flex:0;
+  }
 }
 .businessCard .businessCard__info .info-row.bookmarks {
   align-items: center;
+  @media screen and (max-width: 900px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+  }
 }
 .businessCard .businessCard__info .info-row.bookmarks .icon {
   flex: 1;
+  @media screen and (max-width: 900px) {
+    flex: 0;
+    margin-right: 6px;
+  }
 }
 .businessCard .businessCard__info .info-row.bookmarks p {
   text-transform: lowercase;
+  @media screen and (max-width: 900px) {
+    white-space: nowrap;
+  }
 }
 .businessCard .businessCard__info .info-row.bookmarks a {
   color: var(--orange);
   text-decoration: underline;
+
 }
 .mobileImg{
   @media screen and (max-width: 900px) {
